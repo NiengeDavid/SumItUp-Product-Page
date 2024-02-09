@@ -5,4 +5,14 @@ export const coverImage = `*[_type == "cover"] {
           url
         }
     }
-}`
+}`;
+
+export const buttons = `*[_type == "buy"] | order(_createdAt desc) {
+  name,
+  link,
+  image {
+    asset -> {
+        url
+    }
+  }
+}`;
