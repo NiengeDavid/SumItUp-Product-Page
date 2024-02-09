@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --x: 50%;
+  --y: 50%;
+  --radius: 8vmin;
+  --blur: 3vmax;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+#bg_pixelate {
+  image-rendering: smooth;
+}
