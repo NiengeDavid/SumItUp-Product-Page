@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import bgElement from "../assets/bgElement.png";
 import { client } from "../client";
 import { coverImage } from "../utils/data";
-import { BuyButtons, Button } from "../components";
+import { BuyButtons, Button, Expectation, Content } from "../components";
 
 const Home = () => {
   const [cover, setCover] = useState(null);
@@ -28,7 +28,6 @@ const Home = () => {
     client
       .fetch(query)
       .then((data) => {
-        console.log(data[0]);
         setCover(data[0]);
       })
       .catch((error) => {
@@ -38,8 +37,9 @@ const Home = () => {
 
   return (
     <div className="w-full">
-      <div className="h-screen w-full bg-black flex flex-col justify-center items-center">
-        <main className="z-10">
+      <div className="w-full h-screen bg-black flex flex-col justify-center items-center">
+        {/* cover bg */}
+        <main className="z-10 pt-36 w-full flex flex-col justify-center items-center md:pt-20 ">
           {cover && (
             <img
               src={cover.image.asset.url}
@@ -47,6 +47,10 @@ const Home = () => {
               className="w-56 h-72 shadow-xl border-4 border-white rounded-lg"
             />
           )}
+          {/* Buy Buttons */}
+          <div className="bg-[#A3DFED] bg-blend-darken overflow-y-hidden my-20 mb-28 w-[95%] mx-auto p-2 flex justify-center items-center rounded-lg shadow-md md:w-4/5">
+            <Button />
+          </div>
         </main>
         <div className="absolute top-0 left-0 w-full h-full" id="bg">
           <div
@@ -65,9 +69,14 @@ const Home = () => {
             }}
           />
         </div>
-        <div className="bg-[#A3DFED] bg-blend-darken sticky z-10 mt-28 w-4/5 mx-auto p-2 flex justify-center items-center rounded-lg">
-          <Button />
-        </div>
+      </div>
+      {/* Expectations */}
+      <div className="bg-[#EDF9FB] mt-0 w-full flex justify-center items-center mx-auto">
+        <Expectation />
+      </div>
+      {/* Content */}
+      <div className="bg-white mt-0 w-full flex justify-center items-center mx-auto">
+        <Content />
       </div>
     </div>
   );

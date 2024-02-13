@@ -14,6 +14,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'red',
+        title: 'Red',
+        type: 'string',
+      },
+      {
         name: 'p3',
         title: 'P3',
         type: 'string',

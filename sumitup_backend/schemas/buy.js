@@ -21,5 +21,15 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: 'alt',
+      title: 'Alt',
+      type: 'string',
+    },
+    {
+      name: 'color',
+      title: 'Color',
+      type: 'string',
+    },
   ],
 }
