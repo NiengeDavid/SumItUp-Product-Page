@@ -80,3 +80,19 @@ export const learn =  `*[_type == "learn" ] | order(_createdAt asc) {
   number,
   learn
 }`
+
+export const headings = `*[_type == "sectionTitle" ] | order(_createdAt asc) {
+  title,
+  emoji
+}`
+
+export const testimonyFeed = `*[_type == "testimonial" ] | order(_createdAt asc) {
+  image {
+    asset -> {
+        url
+    }
+  },
+  testimony,
+  name,
+  title
+}`

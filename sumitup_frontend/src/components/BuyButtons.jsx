@@ -1,10 +1,20 @@
 import React from "react";
 
 const BuyButtons = ({ data, benue, abuja, jos }) => {
-  const buttons = Object.keys(data).map((key) => data[key]);
-  const Benue = Object.keys(benue).map((key) => benue[key]);
-  const Abuja = Object.keys(abuja).map((key) => abuja[key]);
-  const Jos = Object.keys(jos).map((key) => jos[key]);
+
+  function mapDataToArray(data) {
+    try {
+      return Object.keys(data).map((key) => data[key]);
+    } catch (error) {
+      console.error('An error occurred while mapping data:', error);
+      return [];
+    }
+  }
+  
+  const buttons = mapDataToArray(data);
+  const Benue = mapDataToArray(benue);
+  const Abuja = mapDataToArray(abuja);
+  const Jos = mapDataToArray(jos);
 
   return (
     <div className="flex flex-col w-full mx-auto p-4 space-y-3 justify-center items-center">

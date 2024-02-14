@@ -13,7 +13,6 @@ const ContentFeed = () => {
       client
         .fetch(query)
         .then((data) => {
-          console.log(data);
           setContentTitle(data);
         })
         .catch((error) => {
@@ -27,7 +26,6 @@ const ContentFeed = () => {
       client
         .fetch(query)
         .then((data) => {
-            console.log(data);
             setLearnFeed(data);
         })
         .catch((error) => {
