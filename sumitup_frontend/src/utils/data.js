@@ -68,3 +68,15 @@ export const overview = `*[_type == "overview" ] {
   p3,
   red
 }`;
+
+export const content = `*[_type == "content" ] {
+  title,
+  video,
+  content_title,
+  ending_slug
+}`;
+
+export const learn =  `*[_type == "learn" ] | order(_createdAt asc) {
+  number,
+  learn
+}`

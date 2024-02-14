@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import bgElement from "../assets/bgElement.png";
 import { client } from "../client";
 import { coverImage } from "../utils/data";
-import { BuyButtons, Button, Expectation, Content } from "../components";
+import { Button, Expectation, ContentFeed, Testimony } from "../components";
 
 const Home = () => {
   const [cover, setCover] = useState(null);
@@ -76,7 +76,11 @@ const Home = () => {
       </div>
       {/* Content */}
       <div className="bg-white mt-0 w-full flex justify-center items-center mx-auto">
-        <Content />
+        <ContentFeed />
+      </div>
+      {/* Testimonial */}
+      <div className="bg-[#6CCDE2] mt-0 w-full flex justify-center items-center mx-auto">
+        <Testimony />
       </div>
     </div>
   );

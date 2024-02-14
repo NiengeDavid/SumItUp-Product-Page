@@ -3,3 +3,5 @@ export { default as BuyButtons } from './BuyButtons';
 export { default as Expectation } from './Expectation';
 export { default as Content } from './Content';
 export { default as ContentFeed } from './ContentFeed';
+export { default as Testimonial } from './Testimonial';
+export { default as Testimony } from './Testimony';

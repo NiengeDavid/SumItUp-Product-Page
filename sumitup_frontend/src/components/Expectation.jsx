@@ -12,8 +12,7 @@ const Expectation = () => {
 
       client
         .fetch(query)
-        .then((data) => {
-            console.log(data);
+        .then((data) => { 
             setIntrod(data);
         })
         .catch((error) => {
@@ -26,8 +25,7 @@ const Expectation = () => {
 
       client
         .fetch(query)
-        .then((data) => {
-            console.log(data);
+        .then((data) => { 
             setIntroduction(data);
         })
         .catch((error) => {
