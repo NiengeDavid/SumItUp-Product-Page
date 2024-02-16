@@ -5,5 +5,5 @@ export { default as Content } from './Content';
 export { default as ContentFeed } from './ContentFeed';
 export { default as Testimonial } from './Testimonial';
 export { default as Testimony } from './Testimony';
-export { default as Spinner } from './Spinner';
-export { default as TestimonyCard } from './TestimonyCard';
+export { default as Brief } from './Brief';
+export { default as BriefFeed } from './BriefFeed';

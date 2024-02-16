@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import bgElement from "../assets/bgElement.png";
 import { client } from "../client";
 import { coverImage } from "../utils/data";
-import { Button, Expectation, ContentFeed, Testimony } from "../components";
+import {
+  Button,
+  Expectation,
+  ContentFeed,
+  Testimony,
+  Brief,
+  BriefFeed,
+} from "../components";
 
 const Home = () => {
   const [cover, setCover] = useState(null);
@@ -81,6 +88,10 @@ const Home = () => {
       {/* Testimonial */}
       <div className="bg-[#6CCDE2] mt-0 w-full flex justify-center items-center mx-auto">
         <Testimony />
+      </div>
+      {/* Brief */}
+      <div className="bg-gradient-to-b from-[#4B1C2F] to-[#1E1F23] p-5 mt-0 w-full flex justify-center items-center mx-auto border-4 border-white">
+        <BriefFeed />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Testimonial } from '../components';
+import { Brief } from '../components';
 import { client } from "../client";
 import { coverImage, headings, testimonyFeed } from "../utils/data";
 
-const Testimony = () => {
+const BriefFeed = () => {
   const [heading, setHeading] = useState(null);
   const [actualData, setActualData] = useState(null);
   const [cover, setCover] = useState(null);
@@ -50,8 +50,8 @@ const Testimony = () => {
   }, []);
 
   return (
-    <div><Testimonial cover={cover} title={heading} testimonies={actualData} /></div>
+    <div><Brief cover={cover} title={heading} brief={actualData} /></div>
   )
 }
 
-export default Testimony;
+export default BriefFeed;
