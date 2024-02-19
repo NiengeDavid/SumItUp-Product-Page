@@ -100,7 +100,7 @@ const Footer = ({ title, socials, countries, details }) => {
             <div>
                 <img src={details[0].image.asset.url} alt="" className="w-full h-full " />
             </div>
-            <span class="text-sm text-[#EBE6E8] text-center pt-3">© {new Date().getFullYear()}. All rights reserved.</span>
+            <span className="text-sm text-[#EBE6E8] text-center pt-3">© {new Date().getFullYear()}. All rights reserved.</span>
           </div>
         </div>
       )}
