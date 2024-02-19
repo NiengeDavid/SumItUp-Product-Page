@@ -6,21 +6,11 @@ export default {
     {
       name: 'countryin',
       title: 'Countryin',
-      type: 'document',
-      fields: [
-        {name: 'title', title: 'Title', type: 'string'},
-        {
-          name: 'country',
-          title: 'Country',
-          type: 'array',
-          of: [{type: 'string'}],
-        }
-      ],
+      type: 'string',
     },
-
     {
-      name: 'notCountryin',
-      title: 'NotCountryin',
+      name: 'countryout',
+      title: 'Countryout',
       type: 'string',
     },
     {
@@ -29,23 +19,17 @@ export default {
       type: 'string',
     },
     {
-      name: 'socials',
-      title: 'Socials',
-      type: 'document',
-      fields: [
-        {name: 'title', title: 'Title', type: 'string'},
-        {
-          name: 'social',
-          title: 'social',
-          type: 'array',
-          of: [{type: 'string'}],
-        }
-      ],
+      name: 'links',
+      title: 'Links',
+      type: 'string',
     },
     {
-      name: 'copyright',
-      title: 'Copyright',
-      type: 'string',
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     },
   ],
 }

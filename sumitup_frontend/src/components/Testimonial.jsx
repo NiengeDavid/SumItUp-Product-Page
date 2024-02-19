@@ -38,14 +38,14 @@ const Testimonial = ({ cover, title, testimonies }) => {
           
             {Details.map((pin) => (
               <div className='m-2'>
-                <div className="relative bg-[#EDF9FB] w-auto flex flex-col mx-auto justify-center items-center space-y-3 p-2 rounded-xl border border-[#5F3546] shadow-xl">
+                <div className="relative bg-[#EDF9FB] w-auto flex flex-col mx-auto justify-center items-center space-y-3 p-2 rounded-xl border border-[#5F3546] shadow-black shadow-sm">
                   <div className="w-full flex justify-center items-center rounded-full p-2">
                     <img src={pin.image.asset.url} alt={pin.name} className="w-10 h-10 rounded-full shadow-sm" />
                   </div>
 
                   <div className="w-full flex justify-center items-center mx-auto p-2">
                     <p className="text-sm text-black text-center font-light tracking-normal">
-                      Ali is the master of productivity. Nobody has a talent for distilling complicated ideas into fun.
+                      {pin.testimony}
                     </p>
                   </div>
 

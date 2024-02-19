@@ -7,8 +7,10 @@ import {
   Expectation,
   ContentFeed,
   Testimony,
-  Brief,
   BriefFeed,
+  AuthorFeed,
+  BuyFeed,
+  FooterFeed,
 } from "../components";
 
 const Home = () => {
@@ -51,11 +53,11 @@ const Home = () => {
             <img
               src={cover.image.asset.url}
               alt={cover.name}
-              className="w-56 h-72 shadow-xl border-4 border-white rounded-lg"
+              className="w-56 h-72 shadow-black shadow-sm border-4 border-white rounded-lg"
             />
           )}
           {/* Buy Buttons */}
-          <div className="bg-[#A3DFED] bg-blend-darken overflow-y-hidden my-20 mb-28 w-[95%] mx-auto p-2 flex justify-center items-center rounded-lg shadow-md md:w-4/5">
+          <div className="bg-[#A3DFED] bg-blend-darken overflow-y-hidden my-20 mb-28 w-[95%] mx-auto p-2 flex justify-center items-center rounded-lg shadow-black shadow-sm md:w-4/5">
             <Button />
           </div>
         </main>
@@ -79,7 +81,7 @@ const Home = () => {
       </div>
       {/* Expectations */}
       <div className="bg-[#EDF9FB] mt-0 w-full flex justify-center items-center mx-auto">
-        <Expectation />
+        <Expectation />         
       </div>
       {/* Content */}
       <div className="bg-white mt-0 w-full flex justify-center items-center mx-auto">
@@ -92,6 +94,18 @@ const Home = () => {
       {/* Brief */}
       <div className="bg-gradient-to-b from-[#4B1C2F] to-[#1E1F23] p-5 mt-0 w-full flex justify-center items-center mx-auto border-4 border-white">
         <BriefFeed />
+      </div>
+      {/* Author */}
+      <div className="bg-[#6CCDE2] mt-0 w-full flex justify-center items-center mx-auto">
+        <AuthorFeed />
+      </div>
+      {/* Buy */}
+      <div className="bg-white mt-0 w-full flex justify-center items-center mx-auto">
+        <BuyFeed />
+      </div>
+      {/* Footer */}
+      <div className="bg-gradient-to-b from-[#1E1F23] to-[#4B1C2F] p-5 mt-0 w-full flex justify-center items-center mx-auto">
+        <FooterFeed /> 
       </div>
     </div>
   );

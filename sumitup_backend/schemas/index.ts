@@ -10,6 +10,8 @@ import testimonial from './testimonial'
 import contentSummary from './contentSummary'
 import author from './author'
 import footer from './footer'
+import socials from './socials'
+import countries from './countries'
 
 export const schemaTypes = [
   cover,
@@ -23,5 +25,7 @@ export const schemaTypes = [
   testimonial,
   contentSummary,
   author,
-  footer
+  footer,
+  socials,
+  countries
 ]

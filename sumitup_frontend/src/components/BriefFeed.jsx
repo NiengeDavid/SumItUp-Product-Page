@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Brief } from '../components';
 import { client } from "../client";
-import { coverImage, headings, testimonyFeed } from "../utils/data";
+import { coverImage, headings, summary } from "../utils/data";
 
 const BriefFeed = () => {
   const [heading, setHeading] = useState(null);
@@ -23,7 +23,7 @@ const BriefFeed = () => {
   }, [])
 
   useEffect(() => {
-    const query = testimonyFeed;
+    const query = summary;
 
     client
       .fetch(query)

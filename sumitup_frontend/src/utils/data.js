@@ -96,3 +96,45 @@ export const testimonyFeed = `*[_type == "testimonial" ] | order(_createdAt asc)
   name,
   title
 }`
+
+export const summary = `*[_type == "contentSummary" ] | order(_createdAt asc) {
+  chapter,
+  title,
+  summary
+}`
+
+export const author = `*[_type == "author" ] {
+  image {
+    asset -> {
+      url
+    }
+  },
+  name,
+  bio,
+  about,
+  info
+}`
+
+export const socials = `*[_type == "socials" ] | order(_createdAt asc) {
+  media,
+  icon,
+  link
+}`
+
+export const countries = `*[_type == "countries" ] | order(_createdAt asc) {
+  country,
+  short,
+  link
+}`
+
+export const footer = `*[_type == "footer" ] {
+  countryin,
+  countryout,
+  reason,
+  links,
+  image {
+    asset -> {
+      url
+    }
+  },
+}`
