@@ -29,8 +29,10 @@ const AuthorFeed = () => {
         .fetch(query)
         .then((data) => {
             setDetails(data);
-            console.log(data)
         })
+        .catch((error) => {
+          console.log("Error fetching Author:", error);
+        });
     }, [])
     
 
