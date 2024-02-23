@@ -46,7 +46,7 @@ const Home = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full h-screen bg-black flex flex-col justify-center items-center">
+      <div className="w-full h-screen bg-[#EBEBE8] flex flex-col justify-center items-center">
         {/* cover bg */}
         <main className="z-10 pt-5 w-full flex flex-col justify-center items-center md:pt-20 ">
           {cover && (
