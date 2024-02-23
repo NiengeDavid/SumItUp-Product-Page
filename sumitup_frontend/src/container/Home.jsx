@@ -48,16 +48,16 @@ const Home = () => {
     <div className="w-full">
       <div className="w-full h-screen bg-black flex flex-col justify-center items-center">
         {/* cover bg */}
-        <main className="z-10 pt-36 w-full flex flex-col justify-center items-center md:pt-20 ">
+        <main className="z-10 pt-5 w-full flex flex-col justify-center items-center md:pt-20 ">
           {cover && (
             <img
               src={cover.image.asset.url}
               alt={cover.name}
-              className="w-56 h-72 shadow-black shadow-sm border-4 border-white rounded-lg"
+              className="w-36 h-48 shadow-black shadow-sm border-4 border-white rounded-lg md:w-56 md:h-72"
             />
           )}
           {/* Buy Buttons */}
-          <div className="bg-[#A3DFED] bg-blend-darken overflow-y-hidden my-20 mb-28 w-[95%] mx-auto p-2 flex justify-center items-center rounded-lg shadow-black shadow-sm md:w-4/5">
+          <div className="bg-[#A3DFED] bg-blend-darken overflow-y-hidden my-10 mb-5 w-[95%] mx-auto p-2 flex justify-center items-center rounded-lg shadow-black shadow-sm md:my-20 md:mb-28 md:w-4/5">
             <Button />
           </div>
         </main>

@@ -16,7 +16,7 @@ const BuyFeed = () => {
             setHeading(data)
           })
           .catch((error) => {
-            console.log("Error fetching headings:", error);
+            //console.log("Error fetching headings:", error);
           })
         
     }, [])
@@ -28,6 +28,9 @@ const BuyFeed = () => {
         .fetch(query)
         .then((data) => {
             setDetails(data);
+        })
+        .catch((error) => {
+          //console.log("Error fetching buttons:", error);
         })
     }, [])
 

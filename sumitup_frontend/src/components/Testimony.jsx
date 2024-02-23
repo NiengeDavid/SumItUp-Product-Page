@@ -17,7 +17,7 @@ const Testimony = () => {
         setHeading(data)
       })
       .catch((error) => {
-        console.log("Error fetching headings:", error);
+        //console.log("Error fetching headings:", error);
       })
     
   }, [])
@@ -31,7 +31,7 @@ const Testimony = () => {
         setActualData(data);
       })
       .catch((error) => {
-        console.log("Error fetching Testimonies:", error);
+        //console.log("Error fetching Testimonies:", error);
       })
     
   }, [])
@@ -45,7 +45,7 @@ const Testimony = () => {
         setCover(data[0]);
       })
       .catch((error) => {
-        console.error("Error fetching cover image:", error);
+        //console.error("Error fetching cover image:", error);
       });
   }, []);
 

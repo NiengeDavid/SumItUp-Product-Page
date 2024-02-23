@@ -23,7 +23,7 @@ const Brief = ({ cover, title, brief }) => {
             </div>
         )}
 
-        <div className="pt-24 w-full flex flex-col-reverse justify-center items-center mx-auto space-y-4 md:items-start md:justify-between md:flex-row md:space-y-0 md:space-x-0">
+        <div className="pt-10 w-full flex flex-col-reverse justify-center items-center mx-auto space-y-4 md:items-start md:justify-between md:flex-row md:space-y-0 md:space-x-0 md:pt-24">
             {cover && (
                 <div className="sticky top-0 flex w-full justify-center items-center mt-16 md:py-10">
                     <img src={cover.image.asset.url} alt={cover.name} className="w-48 h-full shadow-md border border-[#ECE7E7] rounded-md" />

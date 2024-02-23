@@ -18,7 +18,7 @@ const FooterFeed = () => {
         setHeading(data);
       })
       .catch((error) => {
-        console.log("Error fetching headings:", error);
+        //console.log("Error fetching headings:", error);
       });
   }, []);
 
@@ -39,7 +39,7 @@ const FooterFeed = () => {
         setFoot(data);
       })
       .catch((error) => {
-        console.log("Error fetching headings:", error);
+        //console.log("Error fetching headings:", error);
       });
   }, []);
 
@@ -52,7 +52,7 @@ const FooterFeed = () => {
         setCountry(data);
       })
       .catch((error) => {
-        console.log("Error fetching headings:", error);
+        //console.log("Error fetching headings:", error);
       });
   }, []);
 

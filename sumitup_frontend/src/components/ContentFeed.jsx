@@ -16,7 +16,7 @@ const ContentFeed = () => {
           setContentTitle(data);
         })
         .catch((error) => {
-            console.log('Error fetching Content data:', error);
+            //console.log('Error fetching Content data:', error);
         })
     }, [])
 
@@ -29,7 +29,7 @@ const ContentFeed = () => {
             setLearnFeed(data);
         })
         .catch((error) => {
-            console.log('Error fetching learn data:', error);
+            //console.log('Error fetching learn data:', error);
         })
     }, [])
 

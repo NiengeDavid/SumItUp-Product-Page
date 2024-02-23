@@ -16,7 +16,7 @@ const Expectation = () => {
             setIntrod(data);
         })
         .catch((error) => {
-            console.log('Error fetching intro data:', error);
+            //console.log('Error fetching intro data:', error);
         })
     }, [])
 
@@ -29,7 +29,7 @@ const Expectation = () => {
             setIntroduction(data);
         })
         .catch((error) => {
-            console.log('Error fetching overview data:', error);
+            //console.log('Error fetching overview data:', error);
         })
     }, [])
     
@@ -40,21 +40,21 @@ const Expectation = () => {
         {introd && (
             <div className="w-full flex flex-col p-2 text-center justify-center items-center space-y-0 md:flex-row md:space-y-0 md:space-x-0">
                 <div className="flex space-x-3 justify-center items-center p-2">
-                    <h1 className="text-3xl font-semibold text-[#370317]">
+                    <h1 className="text-2xl font-semibold text-[#370317] md:text-3xl">
                         {introd[0].firstpart}
                     </h1>
                     
-                    <span className="bg-green-50 p-3 text-2xl leading-2 tracking-wider font-semibold text-[#47C0DB] rounded-full border border-[#47C0DB]">
+                    <span className="bg-green-50 p-3 text-lg leading-2 tracking-wider font-semibold text-[#47C0DB] rounded-full border border-[#47C0DB] md:text-2xl">
                         {introd[0].greenpart}
                     </span>
                 
                 </div>
                 <div className="flex space-x-3 justify-center items-center p-2">
-                    <h1 className="text-3xl font-semibold text-[#370317]">
+                    <h1 className="text-2xl font-semibold text-[#370317] md:text-3xl">
                         {introd[0].secondpart}
                     </h1>
                 
-                    <span className="bg-red-50 p-3 text-2xl leading-2 tracking-wider font-semibold text-[#F41465] rounded-full border border-[#F41465]">
+                    <span className="bg-red-50 p-3 text-lg leading-2 tracking-wider font-semibold text-[#F41465] rounded-full border border-[#F41465] md:text-2xl">
                         {introd[0].redpart}
                     </span>
                 

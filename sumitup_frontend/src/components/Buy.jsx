@@ -38,7 +38,7 @@ const Buy = ({ title, buttons }) => {
                     <img
                         src={btn.image.asset.url}
                         alt={btn.alt}
-                        className="w-16 h-5 md:w-20 md:h-6"
+                        className="w-10 h-3 md:w-20 md:h-6"
                     />
                 </a>
             ))}

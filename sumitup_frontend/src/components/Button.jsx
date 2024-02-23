@@ -18,7 +18,7 @@ const Button = () => {
         setButton(data);
       })
       .catch((error) => {
-        console.error("Error fetching online buttons:", error);
+        //console.error("Error fetching online buttons:", error);
       });
   }, [])
 
@@ -31,7 +31,7 @@ const Button = () => {
         setBenueButton(data);
       })
       .catch((error) => {
-        console.error("Error fetching benue buttons:", error);
+        //console.error("Error fetching benue buttons:", error);
       });
   }, [])
 
@@ -44,7 +44,7 @@ const Button = () => {
         setAbujaButton(data);
       })
       .catch((error) => {
-        console.error("Error fetching abuja buttons:", error);
+        //console.error("Error fetching abuja buttons:", error);
       });
   }, [])
 
@@ -57,7 +57,7 @@ const Button = () => {
         setJosButton(data);
       })
       .catch((error) => {
-        console.error("Error fetching jos buttons:", error);
+        //console.error("Error fetching jos buttons:", error);
       });
   }, [])
   

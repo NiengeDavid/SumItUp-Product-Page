@@ -17,7 +17,7 @@ const AuthorFeed = () => {
             setHeading(data)
           })
           .catch((error) => {
-            console.log("Error fetching headings:", error);
+            //console.log("Error fetching headings:", error);
           })
         
     }, [])
@@ -31,7 +31,7 @@ const AuthorFeed = () => {
             setDetails(data);
         })
         .catch((error) => {
-          console.log("Error fetching Author:", error);
+          //console.log("Error fetching Author:", error);
         });
     }, [])
     
