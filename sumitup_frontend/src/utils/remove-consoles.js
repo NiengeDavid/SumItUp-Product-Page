@@ -1,5 +1,4 @@
 export const GlobalDebug = (function () {
-    var savedConsole = console;
     var originalConsole = {
         log: console.log,
         info: console.info,
